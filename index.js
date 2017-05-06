@@ -7,13 +7,13 @@ function WebpackPluginGraphqlJSONHot(options) {
   this.options = options;
   this.log = msg => {
     // if (this.verbose) {
-    console.log('[touch-relay-dependents]:', msg);
+    console.log('[relay-touch-dependents]:', msg);
     // }
   };
 
   this.err = msg => {
     // if (!this.hideErrors) {
-    console.error('[ERROR][touch-relay-dependents]:', msg);
+    console.error('[ERROR][relay-touch-dependents]:', msg);
     // }
   };
 }
