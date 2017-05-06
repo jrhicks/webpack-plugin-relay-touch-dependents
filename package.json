@@ -1,0 +1,51 @@
+{
+  "name": "webpack-plugin-relay-touch-dependents",
+  "version": "0.0.12",
+  "description": "Triggers modules dependent on relay transformation to rebuild on GraphQL Schema JSON updates.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrhicks/webpack-plugin-relay-touch-dependents"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "keywords": [
+    "webpack",
+    "graphql"
+  ],
+  "author": "Jeffrey Hicks <jrhicks@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrhicks/webpack-plugin-relay-touch-dependents/issues"
+  },
+  "homepage": "https://github.com/jrhicks/webpack-plugin-relay-touch-dependents",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-relay-hot": "^0.0.6",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-relay-plugin": "^0.10.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "express": "^4.14.0",
+    "express-graphql": "^0.6.2",
+    "graphql": "^0.9.6",
+    "graphql-relay": "^0.5.1",
+    "mocha": "^3.3.0",
+    "node-fetch": "^1.6.3",
+    "nodemon": "^1.11.0",
+    "onchange": "^3.2.1",
+    "parallelshell": "^2.0.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-relay": "^0.10.0",
+    "webpack": "^2.5.0",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "filewatcher": "^3.0.1",
+    "touch": "^1.0.0"
+  }
+}
