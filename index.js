@@ -29,7 +29,7 @@ WebpackPluginGraphqlJSONHot.prototype.apply = function(compiler) {
   compiler.plugin("compilation", function(compilation) {
     compilation.plugin('succeed-module', function(module){
       if (!dependents.includes(module.resource)) {
-        if (module.loaders.length > 0 && module._source._value.includes(RELAY_SIGNATURE)) {
+        if (module.loaders && module.loaders.length > 0 && module._source._value.includes(RELAY_SIGNATURE)) {
           that.log('Dependent: ' + module.rawRequest);
           dependents.push(module.resource);
         }
