@@ -2,7 +2,7 @@ Webpack Plugin Relay Touch Dependents
 ---------------------
 Trigger efficient webpack rebuilds after your GraphQL Schema has been updated and saved to JSON.
 
-![Travis CI Badge](https://travis-ci.org/jrhicks/webpack-plugin-relay-touch-dependents.svg?branch=master)
+[![Build Status](https://travis-ci.org/jrhicks/webpack-plugin-relay-touch-dependents.svg?branch=master)](https://travis-ci.org/jrhicks/webpack-plugin-relay-touch-dependents)
 
 You might be interested if:
 --------------------------
