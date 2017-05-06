@@ -4,12 +4,12 @@ Trigger efficient webpack rebuilds after your GraphQL Schema has been updated an
 
 ![Travis CI Badge](https://travis-ci.org/jrhicks/webpack-plugin-relay-touch-dependents.svg?branch=master)
 
-You Might Be Interested If:
+You might be interested if:
 --------------------------
 
-* You use Webpack, GraphQL, and RelayJS
+* You use Webpack, GraphQL, and RelayJS.
 
-* You're automatically [saving schema changes to JSON](https://facebook.github.io/relay/docs/guides-babel-plugin.html#schema-json)
+* You're automatically [saving schema changes to JSON](https://facebook.github.io/relay/docs/guides-babel-plugin.html#schema-json).
 
 * You're using  [babel-plugin-transform-relay-hot](https://www.npmjs.com/package/babel-plugin-transform-relay-hot) to reconfigure your babel compiler without having to completely restart webpack.
 
