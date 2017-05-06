@@ -4,24 +4,16 @@ Trigger efficient webpack rebuilds after your GraphQL Schema has been updated an
 
 ![Travis CI Badge](https://travis-ci.org/jrhicks/webpack-plugin-relay-touch-dependents.svg?branch=master)
 
-You might be interested if:
----------------------------
+You Might Be Interested If:
+--------------------------
 
 * You use Webpack, GraphQL, and RelayJS
 
-* You are using [babel-plugin-transform-relay-hot](https://www.npmjs.com/package/babel-plugin-transform-relay-hot) to reconfigure your babel compiler without having to completely restart webpack.
+* You're automatically [saving schema changes to JSON](https://facebook.github.io/relay/docs/guides-babel-plugin.html#schema-json)
 
-* You can [save schema changes to JSON](https://facebook.github.io/relay/docs/guides-babel-plugin.html#schema-json) on your own.
+* You're using  [babel-plugin-transform-relay-hot](https://www.npmjs.com/package/babel-plugin-transform-relay-hot) to reconfigure your babel compiler without having to completely restart webpack.
 
-* You want your webpack to rebuild automatically afterwards.
-
-You probably won't be interested if:
------------------------------------
-
-* You vend your graphql through Node.js
-
-* You had positive results with [webpack-plugin-graphql-schema-hot](https://github.com/nodkz/webpack-plugin-graphql-schema-hot)
-
+* You want your webpack to take the next step and automatically rebuild.
 
 Preview
 -------------
@@ -48,6 +40,11 @@ var RelayTouchDependents = require('webpack-plugin-relay-touch-dependents');
 ...
 
 ```
+
+Similar plugins
+---------------
+* [webpack-plugin-graphql-schema-hot](https://github.com/nodkz/webpack-plugin-graphql-schema-hot)
+
 
 LICENSE
 -----
