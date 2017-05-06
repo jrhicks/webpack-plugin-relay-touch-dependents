@@ -11,7 +11,7 @@ You might be interested if:
 
 * You're automatically [saving schema changes to JSON](https://facebook.github.io/relay/docs/guides-babel-plugin.html#schema-json).
 
-* You're using  [babel-plugin-transform-relay-hot](https://www.npmjs.com/package/babel-plugin-transform-relay-hot) to reconfigure your babel compiler without having to completely restart webpack.
+* You're using  [babel-plugin-transform-relay-hot](https://www.npmjs.com/package/babel-plugin-transform-relay-hot) to Load JSON changes without having to completely restart webpack.
 
 * You want your webpack to take the next step and automatically rebuild.
 
