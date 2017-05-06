@@ -40,16 +40,16 @@ function delay(t) {
 
 function startServer() {
   function start() {
-    testLog('[TEST] Starting server');
+    testLog('Starting server');
     const server = childProcess.spawn('node', [SERVER_PATH]);
     server.stdout.on('data', function (data) {
-      serverLog('[SERVER] ' + data.toString());
+      serverLog(data.toString());
     });
 
   }
   fetch('http://localhost:8080/close')
     .then(function() {
-      testLog('[TEST] Ensuring server not running');
+      testLog('Ensuring server not running');
       start();
       })
     .catch(function() {
@@ -58,7 +58,7 @@ function startServer() {
 }
 
 function startWebpack() {
-  testLog('[TEST] Starting Webpack');
+  testLog('Starting Webpack');
   const webpack = childProcess.spawn(WEBPACK_BIN, ['-w', '--config', CONFIG_PATH]);
   webpack.stdout.on('data', function (data) {
     webpackLog(data.toString());
