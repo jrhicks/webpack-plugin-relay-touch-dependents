@@ -1,11 +1,8 @@
-Webpack Plugin Relay Touch Dependents
----------------------
-Trigger efficient webpack rebuilds after your GraphQL Schema has been updated and saved to JSON.
+# Webpack Plugin Relay Touch Dependents [![Build Status](https://travis-ci.org/jrhicks/webpack-plugin-relay-touch-dependents.svg?branch=master)](https://travis-ci.org/jrhicks/webpack-plugin-relay-touch-dependents) [![npm version](https://badge.fury.io/js/webpack-plugin-relay-touch-dependents.svg)](https://badge.fury.io/js/webpack-plugin-relay-touch-dependents)
 
-[![Build Status](https://travis-ci.org/jrhicks/webpack-plugin-relay-touch-dependents.svg?branch=master)](https://travis-ci.org/jrhicks/webpack-plugin-relay-touch-dependents)
+This is a webpack plugin to trigger efficient webpack rebuilds after your GraphQL Schema has been updated and saved to JSON.
 
 You might be interested if:
---------------------------
 
 * You use Webpack, GraphQL, and RelayJS.
 
@@ -41,12 +38,7 @@ var RelayTouchDependents = require('webpack-plugin-relay-touch-dependents');
 
 ```
 
-Similar plugins
----------------
-* [webpack-plugin-graphql-schema-hot](https://github.com/nodkz/webpack-plugin-graphql-schema-hot)
-
-
-LICENSE
+License
 -----
 Copyright (c) <2017> Jeffrey R. Hicks
 
