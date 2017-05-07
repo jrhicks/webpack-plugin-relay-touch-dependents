@@ -1,6 +1,6 @@
 {
   "name": "webpack-plugin-relay-touch-dependents",
-  "version": "0.0.13",
+  "version": "0.0.33",
   "description": "Triggers modules dependent on relay transformation to rebuild on GraphQL Schema JSON updates.",
   "main": "index.js",
   "repository": {
@@ -41,10 +41,11 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-relay": "^0.10.0",
-    "webpack": "^2.5.0",
+    "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
+    "method-throttle": "^1.1.0",
     "filewatcher": "^3.0.1",
     "touch": "^1.0.0"
   }
