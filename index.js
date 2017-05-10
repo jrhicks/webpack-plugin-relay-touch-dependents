@@ -30,12 +30,14 @@ WebpackPluginGraphqlJSONHot.prototype.apply = function(compiler) {
   var that = this;
   var logUpdate = throttle(function (scanned, count){
     if (scanned) {
-      that.log("Flagged " + count + "/" + scanned + " modules during compilation as schema dependents." );
+      that.log("" + count + "/" + scanned + " compiled modules flagged as relay dependents." );
     }
   }, 5000 );
   logUpdate();
   that.log('Version: 0.0.33 (c) MIT Jeffrey Hicks');
   compiler.plugin("compilation", function(compilation) {
+    count = 0;
+    scanned = 0;
     compilation.plugin('succeed-module', function(module){
       if (!dependents[module.resource]) {
         scanned = scanned + 1;
