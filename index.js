@@ -2,7 +2,13 @@ var filewatcher = require('filewatcher');
 var touch = require('touch');
 var throttle = require( 'method-throttle' );
 
-var RELAY_SIGNATURE = 'Relay.QL';
+var RELAY_CLASSIC_SIGNATURE = 'Relay.QL';
+var RELAY_MODERN_SIGNATURE = 'RelayQL_GENERATED';
+
+function hasRelayLiteral(source) {
+  return source.includes(RELAY_CLASSIC_SIGNATURE) ||
+    source.includes(RELAY_MODERN_SIGNATURE)
+}
 
 function WebpackPluginGraphqlJSONHot(options) {
   this.options = options;
@@ -41,7 +47,7 @@ WebpackPluginGraphqlJSONHot.prototype.apply = function(compiler) {
     compilation.plugin('succeed-module', function(module){
       if (!dependents[module.resource]) {
         scanned = scanned + 1;
-        if (module.loaders && module.loaders.length > 0 && module._source._value.includes(RELAY_SIGNATURE)) {
+        if (module.loaders && module.loaders.length > 0 && hasRelayLiteral(module._source._value)) {
           dependents[module.resource] = true;
           count = count + 1;
         }

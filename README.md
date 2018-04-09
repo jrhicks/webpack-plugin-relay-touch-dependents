@@ -1,14 +1,14 @@
 # Webpack Plugin Relay Touch Dependents [![Build Status](https://travis-ci.org/jrhicks/webpack-plugin-relay-touch-dependents.svg?branch=master)](https://travis-ci.org/jrhicks/webpack-plugin-relay-touch-dependents) [![npm version](https://badge.fury.io/js/webpack-plugin-relay-touch-dependents.svg)](https://badge.fury.io/js/webpack-plugin-relay-touch-dependents)
 
-This is a webpack plugin to trigger efficient webpack rebuilds after your GraphQL Schema has been updated and saved to JSON.
+This is a webpack plugin to trigger efficient webpack rebuilds after your GraphQL schema file has been updated.
 
 You might be interested if:
 
 * You use Webpack, GraphQL, and RelayJS.
 
-* You're automatically [saving schema changes to JSON](https://facebook.github.io/relay/docs/guides-babel-plugin.html#schema-json).
+* You're automatically [saving schema changes to the schema file](https://facebook.github.io/relay/docs/guides-babel-plugin.html#schema-json).
 
-* You're using  [babel-plugin-transform-relay-hot](https://www.npmjs.com/package/babel-plugin-transform-relay-hot) to Load JSON changes without having to completely restart webpack.
+* You're using  [babel-plugin-transform-relay-hot](https://www.npmjs.com/package/babel-plugin-transform-relay-hot) to load schema file changes without having to completely restart webpack.
 
 * You want your webpack to take the next step and automatically rebuild.
 
